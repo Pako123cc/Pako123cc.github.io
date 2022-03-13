@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hola :D</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: rgb(92, 0, 100);
+        }
+
+
+    </style>
+    <script>
+        function SheSaySi(){
+            alert('sabia que dirias que si <3');
+        }
+
+        function mueveElBtn(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Quieres ser mi polola?</h1>
+        <input type="button" onclick="SheSaySi()" id="btnSi" value="Si" style='width: 90px; height:50px; border-radius: 13px; border: 2px solid rgb(46, 0, 46); background-color: blueviolet;' />
+        <input type="button"  onmouseover="mueveElBtn()" id="btnNo" value="No" style='width:90px; height:50px; border-radius: 13px; border: 2px solid rgb(46, 0, 46); background-color: blueviolet;' />
+        <br><br>
+        <img src="kurisu.jfif" width="400" style="border-radius: 30px; border: 4px solid black;" >
+    </center>
+</body>
+</html>
